@@ -1,0 +1,978 @@
+{
+	"info": {
+		"_postman_id": "f5f1b313-d5fb-4fcb-8915-c357dbebb69b",
+		"name": "backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$9DPMeytRWPOrMPH5AGhWQO6GOT3DpQ1oaxU6fhyIdF7LKsPhd4H.6",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8000/api/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "my profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$xeRFzpW0MgbwN3TNTN4b5uNN7MEAvSdgtxWOWy6cnpE2s89tEecn6",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8000/api/myprofile",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"myprofile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/experts/index/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"experts",
+						"index",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/experts/search/hamza",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"experts",
+						"search",
+						"hamza"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/experts/show/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"experts",
+						"show",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show expert schedual",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/experts/showtime/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"experts",
+						"showtime",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show all experts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/experts/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"experts",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show all expert dates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/experts/all/date/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"experts",
+						"all",
+						"date",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show expert ratings",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$JB8Mx4q7HfP5tgtHnm9doud2TCdGxQoZs.a8NDp1XafgJ51nJz6WG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/experts/myratings",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"experts",
+						"myratings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show all my dates",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$3LNujk8h52uR5N1467lzRe7d7siAMu7o5s2zhKyFSIph2oY/0XcvO",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/users/date",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"date"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show all my favorite",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$asBSv4KeFdZfMSoLq0P0DO..6RfzghSphpPJ4VO.Xu8tOyTm8rpgG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/users/showfav",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"showfav"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show my wallet",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$asBSv4KeFdZfMSoLq0P0DO..6RfzghSphpPJ4VO.Xu8tOyTm8rpgG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/mywallet",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mywallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show my rate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$asBSv4KeFdZfMSoLq0P0DO..6RfzghSphpPJ4VO.Xu8tOyTm8rpgG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8000/api/users/myrate/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"myrate",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "hamza1@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "12341234",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create expert",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$n5WAQmNlyREqJCR.RBALs.ZgRnrh89XpZFFEvlGMIxKHLpcZ.Ve0e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "hamza",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "hamza1@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "12341234",
+							"type": "default"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "details",
+							"value": "hello world",
+							"type": "default"
+						},
+						{
+							"key": "number",
+							"value": "0958781111",
+							"type": "default"
+						},
+						{
+							"key": "address",
+							"value": "damascus-dk-a1",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/experts/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"experts",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "hassan",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "hassan@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "1234512345",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/users/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add another type to expert",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$JB8Mx4q7HfP5tgtHnm9doud2TCdGxQoZs.a8NDp1XafgJ51nJz6WG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type",
+							"value": "5",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/experts/addtype",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"experts",
+						"addtype"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit expert schedual",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$t1n8glTOVzBmbtkkut7VQep8l4mC0mJVapZ1Yb29WMNZ9d1qDDzgO",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "start_hour",
+							"value": "07:00",
+							"type": "default"
+						},
+						{
+							"key": "end_hour",
+							"value": "17:00",
+							"type": "default"
+						},
+						{
+							"key": "sat",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "sun",
+							"value": "1",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "mon",
+							"value": "1",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "tue",
+							"value": "1",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "wed",
+							"value": "1",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "thu",
+							"value": "1",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "fri",
+							"value": "1",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/experts/edittime",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"experts",
+						"edittime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit expert info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$6tO/SlJH1LclrKqGluTk1OnKHJRhGg1ZF6EBlPrCdelyxtm6Og4My",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "details",
+							"value": "helloooo",
+							"type": "default"
+						},
+						{
+							"key": "number",
+							"value": "097463542",
+							"type": "default"
+						},
+						{
+							"key": "address",
+							"value": "aleppo",
+							"type": "default"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/Hamza MB/Documents/ملفاتي المستلمة/IMG_20221205_115033_072.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/experts/edit",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"experts",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add date",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$3LNujk8h52uR5N1467lzRe7d7siAMu7o5s2zhKyFSIph2oY/0XcvO",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "date",
+							"value": "2022/1/4 11:00",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/users/add/date/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"add",
+						"date",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add expert to favorite",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$asBSv4KeFdZfMSoLq0P0DO..6RfzghSphpPJ4VO.Xu8tOyTm8rpgG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/users/addfav/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"addfav",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add money to my wallet",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$asBSv4KeFdZfMSoLq0P0DO..6RfzghSphpPJ4VO.Xu8tOyTm8rpgG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cash",
+							"value": "3000",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/addcash",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"addcash"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rate expert by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$asBSv4KeFdZfMSoLq0P0DO..6RfzghSphpPJ4VO.Xu8tOyTm8rpgG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "rate",
+							"value": "3",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/users/addrate/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"addrate",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit my rate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$asBSv4KeFdZfMSoLq0P0DO..6RfzghSphpPJ4VO.Xu8tOyTm8rpgG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "rate",
+							"value": "5",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/users/editrate/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"editrate",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user account",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$3LNujk8h52uR5N1467lzRe7d7siAMu7o5s2zhKyFSIph2oY/0XcvO",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/users/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete expert account",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$rvSIIMDSzSXq8w00OsoD1OwOdMP4wYo/eS4QlibD/3kMl59pkhzEu",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/experts/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"experts",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete favorite by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "$2y$10$asBSv4KeFdZfMSoLq0P0DO..6RfzghSphpPJ4VO.Xu8tOyTm8rpgG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/users/deletefav/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"deletefav",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
